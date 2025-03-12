@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="asset/css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <style>
+        body {
+            background: url('asset/texturebg.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+    </style>
+
+    <section class="contact-container">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message..." required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <p class="contact-info">+6282162725842</p>
+            <nav class="footer-nav">
+                <a href="home.html">HOME</a>
+                <a href="about.html">ABOUT US</a>
+                <a href="product.html">PRODUCT</a>
+                <a href="contactus.html">CONTACT US</a>
+            </nav>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/may_ciresss"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/6282162725842"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener("scroll", function () {
+            var footer = document.getElementById("footer");
+            if (window.scrollY > 200) { // Saat scroll lebih dari 200px
+                footer.style.bottom = "0"; // Tampilkan footer
+            } else {
+                footer.style.bottom = "-100px"; // Sembunyikan footer
+            }
+        });
+    </script>
+
+</body>
+</html>
